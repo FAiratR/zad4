@@ -1,21 +1,14 @@
 package ru.inno;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Configurable;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
-import org.springframework.stereotype.Component;
-import ru.inno.Checkable;
 
-import java.io.File;
 import java.util.List;
-import java.util.Properties;
 
 @Configuration
 @ComponentScan("ru.inno")
-//@Component
 @EnableAspectJAutoProxy // аннотация для добавления прокси AOP
 public class StartProject {
     private FileScannerable fileScanner;

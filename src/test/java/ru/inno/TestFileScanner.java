@@ -34,10 +34,6 @@ public class TestFileScanner {
     // проверим, что @SpringBootTest работает, и объекты инициализируются
     public void test1() {
         Assertions.assertNotEquals(startProject,null);
-        /*ApplicationContext applicationContext = SpringApplication.run(StartProject.class);
-        String[] allBeanNames = applicationContext.getBeanDefinitionNames();
-        for (String beanName : allBeanNames)
-            System.out.println("beanName: " + beanName);*/
     }
 
     void createTestFile() {
